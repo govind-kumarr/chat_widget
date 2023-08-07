@@ -230,7 +230,7 @@ async function appendMessage(message, sender) {
     messageElement.insertBefore(processingIcon, messageElement.firstChild);
     messageElement.classList.add("message", sender);
     chatMessages.appendChild(messageElement);
-    const response = await fetch("https://api.beesers.com/chat/ask", {
+    const response = await fetch("http://172.233.214.76/chat/ask", {
       method: "POST",
       headers: {
         authorization:
